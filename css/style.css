@@ -984,13 +984,76 @@ h3 {
 
 .info-about p:nth-of-type(2) {
   letter-spacing: 0;
-  margin-bottom: 67px;
-  outline: 1px solid rgb(0, 255, 21);
+  margin-bottom: 66px;
+}
+
+.info-contact p {
+  margin-bottom: 38px;
 }
 
 .info-advantages {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.info-advantages li {
+  display: block;
+  position: relative;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800; 
   padding-left: 35px;
+}
+
+.info-advantages li:last-child {
+  margin-bottom: 57px;
+}
+
+.info-advantages li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.map-img {
+  display: inline-block;
+  margin-bottom: 64px;
+}
+
+.info-more,
+.contact-button {
+  display: inline-block;
+  width: 260px;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 9px;
+  font-weight: 800;
+  letter-spacing: 4.0px;
+  color: #000000;
+  background-color: #f0c52e;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.info-more:hover,
+.contact-button:hover {
+  line-height: 24px;
+}
+
+
+.info-more:active,
+.contact-button:active {
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
 }
